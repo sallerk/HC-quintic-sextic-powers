@@ -1,0 +1,399 @@
+{
+ "d=5,m=1,k=1": {
+  "finite_orbit_dim": 17,
+  "hodge_total": 17,
+  "hodge_PAIR": 17,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 6,
+  "sec": 0.0
+ },
+ "d=5,m=1,k=2": {
+  "finite_orbit_dim": 293,
+  "hodge_total": 293,
+  "hodge_PAIR": 293,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 36,
+  "sec": 0.0
+ },
+ "d=5,m=1,k=3": {
+  "finite_orbit_dim": 5121,
+  "hodge_total": 5121,
+  "hodge_PAIR": 5117,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 4,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[1, 4]": 2,
+   "[2, 3]": 2
+  },
+  "tuples": 216,
+  "sec": 0.0
+ },
+ "d=5,m=1,k=4": {
+  "finite_orbit_dim": 90801,
+  "hodge_total": 90801,
+  "hodge_PAIR": 90529,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 272,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[1, 4]": 136,
+   "[2, 3]": 136
+  },
+  "tuples": 1296,
+  "sec": 1.8
+ },
+ "d=5,m=2,k=1": {
+  "finite_orbit_dim": 65,
+  "hodge_total": 65,
+  "hodge_PAIR": 65,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 26,
+  "sec": 0.0
+ },
+ "d=5,m=2,k=2": {
+  "finite_orbit_dim": 4429,
+  "hodge_total": 4429,
+  "hodge_PAIR": 4429,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 676,
+  "sec": 0.0
+ },
+ "d=5,m=2,k=3": {
+  "finite_orbit_dim": 316721,
+  "hodge_total": 316709,
+  "hodge_PAIR": 315941,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 768,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[1, 4]": 384,
+   "[2, 3]": 384
+  },
+  "tuples": 17576,
+  "sec": 0.0
+ },
+ "d=5,m=2,k=4": {
+  "finite_orbit_dim": 23862721,
+  "hodge_total": 23859601,
+  "hodge_PAIR": 23623057,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 236544,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[1, 4]": 118272,
+   "[2, 3]": 118272
+  },
+  "tuples": 456976,
+  "sec": 0.4
+ },
+ "d=5,m=3,k=1": {
+  "finite_orbit_dim": 257,
+  "hodge_total": 257,
+  "hodge_PAIR": 257,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 126,
+  "sec": 0.0
+ },
+ "d=5,m=3,k=2": {
+  "finite_orbit_dim": 73013,
+  "hodge_total": 73013,
+  "hodge_PAIR": 73013,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 15876,
+  "sec": 0.0
+ },
+ "d=5,m=3,k=3": {
+  "finite_orbit_dim": 23027409,
+  "hodge_total": 23024321,
+  "hodge_PAIR": 22921373,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 102948,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[1, 4]": 51456,
+   "[2, 3]": 51456,
+   "[1, 1, 4, 4]": 6,
+   "[1, 2, 3, 4]": 24,
+   "[2, 2, 3, 3]": 6
+  },
+  "tuples": 2000376,
+  "sec": 1.6
+ },
+ "d=6,m=1,k=1": {
+  "finite_orbit_dim": 58,
+  "hodge_total": 58,
+  "hodge_PAIR": 26,
+  "hodge_CMFIN": 32,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 7,
+  "sec": 0.0
+ },
+ "d=6,m=1,k=2": {
+  "finite_orbit_dim": 3367,
+  "hodge_total": 3367,
+  "hodge_PAIR": 679,
+  "hodge_CMFIN": 2688,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 49,
+  "sec": 0.0
+ },
+ "d=6,m=1,k=3": {
+  "finite_orbit_dim": 195634,
+  "hodge_total": 195634,
+  "hodge_PAIR": 17810,
+  "hodge_CMFIN": 177824,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 343,
+  "sec": 0.6
+ },
+ "d=6,m=1,k=4": {
+  "finite_orbit_dim": 11377095,
+  "hodge_total": 11377095,
+  "hodge_PAIR": 469189,
+  "hodge_CMFIN": 10907904,
+  "hodge_EXC": 2,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[2, 4]": 2
+  },
+  "tuples": 2401,
+  "sec": 49.2
+ },
+ "d=6,m=2,k=1": {
+  "finite_orbit_dim": 606,
+  "hodge_total": 606,
+  "hodge_PAIR": 126,
+  "hodge_CMFIN": 480,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 37,
+  "sec": 0.0
+ },
+ "d=6,m=2,k=2": {
+  "finite_orbit_dim": 369191,
+  "hodge_total": 369191,
+  "hodge_PAIR": 16103,
+  "hodge_CMFIN": 353088,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 1369,
+  "sec": 0.0
+ },
+ "d=6,m=2,k=3": {
+  "finite_orbit_dim": 226153296,
+  "hodge_total": 226153296,
+  "hodge_PAIR": 2088432,
+  "hodge_CMFIN": 224064864,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 50653,
+  "sec": 0.0
+ },
+ "d=6,m=2,k=4": {
+  "finite_orbit_dim": 139318498505,
+  "hodge_total": 139316710599,
+  "hodge_PAIR": 275065761,
+  "hodge_CMFIN": 139041288576,
+  "hodge_EXC": 356262,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[2, 4]": 3750,
+   "[4]": 176256,
+   "[2]": 176256
+  },
+  "tuples": 1874161,
+  "sec": 1.9
+ },
+ "d=6,m=3,k=1": {
+  "finite_orbit_dim": 6962,
+  "hodge_total": 6962,
+  "hodge_PAIR": 626,
+  "hodge_CMFIN": 6336,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 217,
+  "sec": 0.0
+ },
+ "d=6,m=3,k=2": {
+  "finite_orbit_dim": 49096337,
+  "hodge_total": 49063569,
+  "hodge_PAIR": 403345,
+  "hodge_CMFIN": 48660224,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 47089,
+  "sec": 0.0
+ },
+ "d=6,m=3,k=3": {
+  "finite_orbit_dim": 351112440632,
+  "hodge_total": 350255819576,
+  "hodge_PAIR": 268124408,
+  "hodge_CMFIN": 349987695168,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 10218313,
+  "sec": 9.3
+ },
+ "d=5 X(G,G,G,G',G',G')": {
+  "finite_orbit_dim": 12549,
+  "hodge_total": 12549,
+  "hodge_PAIR": 12545,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 4,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[1, 4]": 2,
+   "[2, 3]": 2
+  },
+  "tuples": 3126,
+  "sec": 0.0
+ },
+ "d=5 X(G,G,G',G')^2": {
+  "finite_orbit_dim": 187377,
+  "hodge_total": 187377,
+  "hodge_PAIR": 186865,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 512,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[1, 4]": 256,
+   "[2, 3]": 256
+  },
+  "tuples": 15876,
+  "sec": 0.0
+ },
+ "d=5 X(G,G,G)^2": {
+  "finite_orbit_dim": 13993,
+  "hodge_total": 13993,
+  "hodge_PAIR": 13993,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 676,
+  "sec": 212.0
+ },
+ "d=5 X(G,G,G',G'',G''')": {
+  "finite_orbit_dim": 1281,
+  "hodge_total": 1281,
+  "hodge_PAIR": 1281,
+  "hodge_CMFIN": 0,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 626,
+  "sec": 0.0
+ },
+ "d=6 X(G,G,G,G,G',G'')": {
+  "finite_orbit_dim": 1108607,
+  "hodge_total": 1100415,
+  "hodge_PAIR": 27551,
+  "hodge_CMFIN": 1072832,
+  "hodge_EXC": 32,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {
+   "[2]": 16,
+   "[4]": 16
+  },
+  "tuples": 7777,
+  "sec": 0.0
+ },
+ "d=6 X(G,G,G,G')": {
+  "finite_orbit_dim": 7475,
+  "hodge_total": 7475,
+  "hodge_PAIR": 851,
+  "hodge_CMFIN": 6624,
+  "hodge_EXC": 0,
+  "mixed_type": 0,
+  "formula_fail": 0,
+  "decomp_fail": 0,
+  "exc_det_multisets": {},
+  "tuples": 217,
+  "sec": 0.0
+ }
+}
