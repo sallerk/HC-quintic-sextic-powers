@@ -2,7 +2,7 @@ Supporting code and data for the note
 "Weil classes on split quintic hypersurfaces and their powers"
 ==============================================================
 
-Status: draft accompanying a draft note; not peer reviewed.
+Status: accompanies the note (Kevin Saller, 2026, DOI 10.5281/zenodo.23287272); not peer reviewed.
 
 What the note proves: let X_F = {F_0(u_0,v_0) + ... + F_m(u_m,v_m) = 0} in P^(2m+1), with binary forms
 F_s of degree d with distinct zeros, and let Y = X_(F^1) x ... x X_(F^k) be a product whose forms are
@@ -21,13 +21,19 @@ n_j(Y) is the number of places where G_j occurs.
   (closed formula in the note); it holds for X_F^3 if and only if the classes in W(F_s,F_t) are
   algebraic for all s != t; it holds for the tenfold X_(G,G,G,G',G',G'), and for
   X_(G,G,G',G') x X_(G,G,G',G'), if and only if the classes in W(G,G') are algebraic.
-- Theorem D (d = 6): the Hodge conjecture holds for Y if n_j(Y) <= 3 for all j.
+- Theorem D (d = 6): the Hodge conjecture holds for every product Y over very general G, for
+  instance for all powers X_F^k; part (i), where n_j(Y) <= 3 for all j, has a simpler proof. The
+  remaining Hodge classes are reduced to Weil classes for Q(sqrt(-3)) on the abelian sixfolds
+  A_G x E x E, where A_G is the Jacobian of w^3 + G(u,v) = 0 and E the Fermat cubic curve; these
+  are algebraic by results of Schoen (Compositio Math. 65 (1988), 3-32, and 114 (1998), 329-336).
+  A theorem of Markman (arXiv:2502.03415, Theorem 1.5.1; a preprint) gives a second proof.
 As far as the author knows, it is not known whether the classes in W(G,G') are algebraic.
 
 IMPORTANT: the proofs in the note do not use any of these computations. The scripts below compute
 the dimensions of the spaces of Hodge classes for very general forms in two independent ways
-(i2_invariants.py, counts2.py), check Theorem A numerically (monodromy_check.py) and check the closed
-formulas exactly (formulas.py), for finitely many cases; they are described in Section 9
+(i2_invariants.py, counts2.py), check Theorem A numerically (monodromy_check.py), check the closed
+formulas exactly (formulas.py) and sort the d = 6 classes with determinants (d6_det_check.py), for
+finitely many cases; they are described in Section 9
 ("Computations") of the note. monodromy_check.py is numerical evidence for Theorem A, not a proof.
 
 Licence: the code in code/ is under the MIT licence; the data in outputs/ and this text are under
@@ -42,7 +48,7 @@ themselves; numpy may start several threads, which can be prevented by setting O
 OPENBLAS_NUM_THREADS=1 and MKL_NUM_THREADS=1 (this was done for the runtimes below). Runtimes
 measured on a desktop PC, one script at a time: i2_invariants.py 5 s, counts2.py 277 s (of which
 212 s for X_(G,G,G)^2 and 49 s for d = 6, m = 1, k = 4), monodromy_check.py 167 s, formulas.py
-0.1 s.
+0.1 s, d6_det_check.py 80 s.
 
 
 2. How to run
@@ -59,6 +65,7 @@ To reproduce them, from the top folder of this repository:
     python ../code/formulas.py counts2.json i2_invariants.json formulas.json > formulas.out
                                     (reads the results of the two counting programs, so run it in
                                      the same folder, after them)
+    python ../code/d6_det_check.py    d6_det_check.json    > d6_det_check.out
 
 counts2.py takes an optional second argument: "all" (the default, used for outputs/), "powers" (only
 the powers X_F^k) or "repeated" (only the six products with repeated forms); formulas.py needs the
@@ -152,6 +159,19 @@ code/formulas.py  ->  outputs/formulas.json, outputs/formulas.out
   Expected: "galois_multisets": 1000, "galois_failures": 0, "N_ok": true, and in "XxX" the values
   293, 4429, 73013 (m = 1, 2, 3) with "ok": true.
 
+code/d6_det_check.py  ->  outputs/d6_det_check.json, outputs/d6_det_check.out
+  Supports: the "det" entries for d = 6 in Section 9 and the balance (2) in the proof of
+  Theorem D(ii), which is the condition of Lemma 8.3. Imports counts2.py from the same folder; numpy,
+  floating point.
+  For X_F^4 (d = 6, m = 1, 2) and X_(G,G,G,G,G',G''), and as controls X_(G,G,G,G') and
+  X_(G,G,G,G,G'), sorts the Hodge classes in sectors with D(c) nonempty by (D2, D4, n5 - n1): the
+  numbers of determinants on P(2) and on P(4), and the number of entries 5 (= -1) minus the number of
+  entries 1. Checks n5 - n1 = 2 (D2 - D4) for every such sector tuple ("balance_fail").
+  Expected: "balance_fail" 0 and "match" true in every entry; "det_total" 2, 356262, 32, 0, 0, the
+  first three being the "det" values of Section 9; "by_type": for X_F^4, m = 1, (1,1,0) 2; for m = 2,
+  (1,1,0) 3750, (0,1,-2) 176256, (1,0,2) 176256; for X_(G,G,G,G,G',G''), (1,0,2) 16, (0,1,-2) 16.
+  This re-checks a consequence of Lemma 4.2 on these cases; it does not test Lemma 8.3.
+
 code/compare_outputs.py
   Compares the .json files of a rerun with those in outputs/ (see Section 2). Standard library only.
   Against the earlier runs mentioned under "Reproducibility" it reports "equal" for every file.
@@ -166,7 +186,8 @@ code/compare_outputs.py
   very general members have finite monodromy orbits, by Cattani-Deligne-Kaplan) and the sector model
   (1) of the note; they do not test these inputs, except that i2_invariants.py compares the Hodge
   numbers of the model with those of the Jacobian ring.
-- They count Hodge classes; nothing here concerns their algebraicity, or the Weil classes W(G,G').
+- They count Hodge classes; nothing here concerns their algebraicity, the Weil classes W(G,G'), or
+  the Weil classes of the sixfolds A_G x E x E used for d = 6.
 - monodromy_check.py is numerical evidence for Theorem A, not a proof: it uses floating-point ranks
   with a threshold, finitely many braid group elements and finitely many tensor representations.
   Agreement of the invariant dimensions for these representations is consistent with the elements

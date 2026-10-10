@@ -1,0 +1,51 @@
+{
+ "X_F^4, m=1": {
+  "det_total": 2,
+  "balance_fail": 0,
+  "by_type": {
+   "D2=1,D4=1,n5-n1=0": 2
+  },
+  "expected_det": 2,
+  "match": true,
+  "sec": 76.5
+ },
+ "X_F^4, m=2": {
+  "det_total": 356262,
+  "balance_fail": 0,
+  "by_type": {
+   "D2=1,D4=1,n5-n1=0": 3750,
+   "D2=0,D4=1,n5-n1=-2": 176256,
+   "D2=1,D4=0,n5-n1=2": 176256
+  },
+  "expected_det": 356262,
+  "match": true,
+  "sec": 3.0
+ },
+ "X(G,G,G,G,G',G'')": {
+  "det_total": 32,
+  "balance_fail": 0,
+  "by_type": {
+   "D2=1,D4=0,n5-n1=2": 16,
+   "D2=0,D4=1,n5-n1=-2": 16
+  },
+  "expected_det": 32,
+  "match": true,
+  "sec": 0.0
+ },
+ "X(G,G,G,G')": {
+  "det_total": 0,
+  "balance_fail": 0,
+  "by_type": {},
+  "expected_det": 0,
+  "match": true,
+  "sec": 0.0
+ },
+ "X(G,G,G,G,G')": {
+  "det_total": 0,
+  "balance_fail": 0,
+  "by_type": {},
+  "expected_det": null,
+  "match": true,
+  "sec": 0.0
+ }
+}
