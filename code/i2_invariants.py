@@ -1,6 +1,6 @@
 """i2_invariants.py -- Hodge classes on X_F^k (middle Kunneth part H^{2m}(X_F)^{(x)k}) for very general F, d = 5, 6.
 
-Model (inputs, as in the note: Theorem A, the theorem of Cattani-Deligne-Kaplan and the sector model):
+Model (inputs, as in the note: Theorem 3.1, the theorem of Cattani-Deligne-Kaplan and the sector model):
  * H^{2m}(X_F) = C h^m (+) (+)_c V_c^prim, and V_c^prim ~ (x)_s P_s(c_s) (x) L_c as Hodge structures up to the
    one-dimensional twist L_c of type (m - sigma, n0 + sigma - 1), sigma = sum_s c_s / d (reps in [0,d-1]),
    n0 = #{s: c_s = 0}; P(0) := trivial piece of dimension d-1 and type (0,0); P(g) of type (g-1, d-1-g).

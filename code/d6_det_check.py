@@ -4,8 +4,8 @@ Uses the model of counts2.py, imported from the same folder (monodromy SL4 x Sp4
 P(0), P(1), P(5)). For every sector tuple whose finite-orbit space is of Hodge type and has nonempty determinant
 content D(c), it records D2, D4 (numbers of determinants on P(2), P(4)), n5 - n1 (number of entries 5 = -1 minus
 number of entries 1) and the dimension. Checks: n5 - n1 = 2 (D2 - D4) for each such tuple (the balance (2) in the
-proof of Theorem D(ii), which is the condition of Lemma 8.3), and the totals against the "det" column of Section 9
-(2, 356262, 32).
+proof of Theorem A for d = 6, which is the condition of Lemma 9.2), and the totals against the "det" column of
+Section 10 (2, 356262, 32).
 
 Usage: python d6_det_check.py <out.json>
 """
