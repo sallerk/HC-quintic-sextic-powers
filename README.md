@@ -12,9 +12,10 @@ such products. For d = 5 the main new input is that the Weil classes for Q(ζ_5)
 Jacobians of the curves y^5 + G(u,v) = 0 and y^5 + G'(u,v) = 0 are algebraic, for all G and G'. As in work of Schoen,
 this follows from the fact that the quotient of the third power of such a curve by a certain finite group is a cyclic
 cover of P^3 branched along five hyperplanes, a quotient of the Fermat quintic threefold, and so does not depend on G.
-For d = 6, the same argument with the Fermat cubic fourfold shows that the Weil classes for Q(√−3) on the abelian
-sixfolds A × E × E are algebraic, where A is the Jacobian of w^3 + G(u,v) = 0 and E is the Fermat cubic curve; the
-Hodge classes that involve determinants on four copies of one curve are reduced to these. The note also determines
+By a degeneration, this can also be deduced from a theorem of Schoen on cyclic covers of curves. For d = 6, the same
+argument with the Fermat cubic fourfold shows that the Weil classes for Q(√−3) on the abelian sixfolds A × E × E are
+algebraic, where A is the Jacobian of w^3 + G(u,v) = 0 and E is the Fermat cubic curve; the Hodge classes that involve
+determinants on four copies of one curve are reduced to these. The note also determines
 the identity component of the Zariski closure of the monodromy of the curves y^d + G(u,v) = 0 on their first
 cohomology (SL_3 × SL_3 for d = 5, where this is known; SL_4 × Sp_4 on the part with infinite monodromy for d = 6),
 and counts the Hodge classes of X_F × X_F for d = 5.

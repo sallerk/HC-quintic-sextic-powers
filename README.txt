@@ -16,13 +16,16 @@ n_j(Y) is the number of places where G_j occurs.
   the Jacobians of the curves y^5 + G(u,v) = 0 and y^5 + G'(u,v) = 0, are algebraic. The proof uses
   that the quotient of the third power of such a curve by a certain finite group is a cyclic cover
   of P^3 branched along five hyperplanes in general position, a quotient of the Fermat quintic
-  threefold (Proposition 6.2).
+  threefold (Proposition 6.2). Theorem B can also be deduced, by a degeneration, from a theorem of
+  Schoen (Compositio Math. 65 (1988), 3-32, Corollary 3.1); the note sketches this in Remark 6.5 and
+  does not use it.
 - For d = 6, the Hodge classes involving determinants are reduced to Weil classes for Q(sqrt(-3)) on
   the abelian sixfolds A_G x E x E, where A_G is the Jacobian of w^3 + G(u,v) = 0 and E the Fermat
   cubic curve. These are algebraic by the same argument with the Fermat cubic fourfold and Shioda's
   theorem on products of Fermat varieties (Lemma 9.1). This can also be deduced from results of
-  Schoen (Compositio Math. 114 (1998), 329-336, Sections 11-13) or of Markman (arXiv:2502.03415,
-  Theorem 1.5.1; a preprint); the note does not use them.
+  Schoen (Compositio Math. 114 (1998), 329-336, Sections 6-7 and 11-13) or of Markman
+  (arXiv:2502.03415, Theorem 1.5.1; a preprint), or by a degeneration from Schoen's Corollary 3.1 of
+  1988 (Remark 6.5 of the note); the note does not use them.
 - Theorem 3.1: the identity component of the Zariski closure of the monodromy of the curves
   y^d + G(u,v) = 0 on their first cohomology is SL_3 x SL_3 for d = 5 (this case is known), and
   SL_4 x Sp_4 on the part with infinite monodromy for d = 6.
